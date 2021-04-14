@@ -26,10 +26,10 @@ const router = express.Router()
 router.get('/', (req, res, next) => {
   Schemes.find()
     .then(schemes => {
-      res.json(schemes)
+      res.json(schemes);
     })
-    .catch(next)
-})
+    .catch(next);
+});
 
 /*
   [GET] /api/schemes/2
